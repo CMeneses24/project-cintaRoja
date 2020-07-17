@@ -4,10 +4,10 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem,Form,FormControl,Button } f
 
 const Navbar_pers = ()=> {
     return(
-  <Navbar bg="info" variant="dark">
+  <Navbar bg="" variant="dark">
     <Navbar.Brand href="#home"></Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#home" className='text-dark'>Home</Nav.Link>
       <Nav.Link href="#features">Invertir</Nav.Link>
       <Nav.Link href="#pricing">Administrar</Nav.Link>
     </Nav>

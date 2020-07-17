@@ -1,51 +1,249 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
-  }
-  
-  .invertir {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 1px;
-    grid-area: 1 / 1 / 4 / 7;
-    border-style: solid;;
-  }
-  
-  .simular { grid-area: 1 / 1 / 3 / 3; 
-  border-style: solid;}
-  
-  .opciones { grid-area: 1 / 3 / 3 / 6; }
-  
-  .inversiones-en\ proceso {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-area: 4 / 1 / 6 / 4;
-  }
-  
-  .titulo { grid-area: 1 / 1 / 2 / 4; 
-    border-style: solid;}
-  
-  .cards { grid-area: 2 / 1 / 5 / 4; 
-    border-style: solid;}
-  
-  .fondos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-area: 4 / 4 / 6 / 7;
-    border-style: solid;
-  }
-  
-  .titulo2 { grid-area: 1 / 1 / 2 / 4; 
-    border-style: solid;}
-  
-  .cards2 { grid-area: 2 / 1 / 5 / 4; 
-    border-style: solid;}
+.lt-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px 1px;
+}
+.dashb{
+  height: 88.5vh;
+}
+.borde{
+  border-style: solid;
+  border-radius: 5px;
+}
+.padre {
+ align-items: center;
+}
+.lt-invertir {
+  display: grid;  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px 1px;
+  grid-area: 1 / 1 / 4 / 7;
+}
 
-  
+.lt-simulador {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px 1px;
+  grid-area: 1 / 1 / 5 / 2;
+}
+
+.lt-ttituloin { grid-area: 1 / 1 / 2 / 4; }
+
+.lt-cardsim { grid-area: 2 / 1 / 6 / 4; }
+
+.lt-opciones {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px 1px;
+  grid-area: 1 / 2 / 5 / 6;
+}
+
+.lt-titulop { grid-area: 1 / 1 / 2 / 7; }
+
+.lt-opcion1 { grid-area: 2 / 1 / 5 / 3; }
+
+.lt-opcion2 { grid-area: 2 / 3 / 5 / 5; }
+
+.lt-opcion3 { grid-area: 2 / 5 / 5 / 7; }
+
+.lt-flechas { grid-area: 5 / 6 / 6 / 7; }
+
+.lt-boton-de\ invertir { grid-area: 5 / 2 / 6 / 6; }
+
+.lt-flecha1 { grid-area: 5 / 1 / 6 / 2; }
+
+.lt-inversiones-pendndientes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px 1px;
+  grid-area: 4 / 1 / 6 / 4;
+}
+
+.lt-titulo { grid-area: 1 / 1 / 2 / 6; }
+
+.lt-invesion-1 { grid-area: 2 / 1 / 3 / 6; }
+
+.lt-inversion2 { grid-area: 3 / 1 / 4 / 6; }
+
+.lt-inversion3 { grid-area: 4 / 1 / 5 / 6; }
+
+.lt-fondos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px 1px;
+  grid-area: 4 / 4 / 6 / 7;
+}
+
+.lt-titfon { grid-area: 1 / 1 / 2 / 4; }
+
+.lt-mensaje { grid-area: 2 / 1 / 6 / 4; }
+
+
+@media all and (-ms-high-contrast:none) {
+  .lt-grid-container {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(6, 1fr);
+    -ms-grid-rows: repeat(5, 1fr);
+  }
+
+  .lt-invertir {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(5, 1fr);
+    -ms-grid-rows: repeat(4, 1fr);
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .lt-simulador {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1.1fr 1fr;
+    -ms-grid-rows: repeat(5, 1fr);
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .lt-ttituloin {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .lt-cardsim {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .lt-opciones {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(6, 1fr);
+    -ms-grid-rows: repeat(5, 1fr);
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+
+  .lt-titulop {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+
+  .lt-opcion1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .lt-opcion2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+
+  .lt-opcion3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+  }
+
+  .lt-flechas {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
+  }
+
+  .lt-boton-de\ invertir {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+
+  .lt-flecha1 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+
+  .lt-inversiones-pendndientes {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(5, 1fr);
+    -ms-grid-rows: repeat(4, 1fr);
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .lt-titulo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  .lt-invesion-1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  .lt-inversion2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  .lt-inversion3 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+
+  .lt-fondos {
+    display: -ms-grid;
+    -ms-grid-columns: repeat(3, 1fr);
+    -ms-grid-rows: repeat(5, 1fr);
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+  }
+
+  .lt-titfon {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .lt-mensaje {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+}

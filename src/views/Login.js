@@ -5,9 +5,7 @@ import Login from './../components/Login';
 
 const MyLogin = () =>{
     return(
-        <Layout>
-            <Login> </Login>
-        </Layout>  
+            <Login> </Login> 
     );
 };
 

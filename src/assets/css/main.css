@@ -20,7 +20,10 @@
 .bg-primary{
   background: rgb(2,0,36);
 background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 23%, rgba(0,212,255,1) 54%);
+align-items:center;
 }
+
+
 
 * {
 	margin: 0px; 
@@ -160,7 +163,7 @@ iframe {
 
 .wrap-login100 {
   width: 390px;
-  background: #fff;
+  background: ;
   border-radius: 10px;
   position: relative;
 }
@@ -176,7 +179,7 @@ iframe {
 .login100-form-title {
   font-family: Ubuntu-Bold;
   font-size: 30px;
-  color: #403866;
+  color:white;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;

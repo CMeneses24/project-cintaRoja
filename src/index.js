@@ -15,6 +15,7 @@ import './assets/vendor/daterangepicker/daterangepicker.css';
 import './assets/css/main.css';
 import './assets/css/util.css';
 import './assets/css/dash.css';
+import './assets/css/Layout.css'
 
 
 ReactDOM.render(

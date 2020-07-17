@@ -1,0 +1,17 @@
+.layouts{
+    display:grid;
+    grid-template-areas: "a b b"
+                         "a b b"
+                         "c c c";
+    width: 100vw;
+    height: 100vh;
+}
+.navb{
+    grid-area: a;
+}
+.cont{
+    grid-area: b;
+}
+.fot{
+    grid-area: c;
+}

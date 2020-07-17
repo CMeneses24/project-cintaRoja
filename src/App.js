@@ -21,6 +21,9 @@ function App() {
         <Route exact path="/Dashboard">
           <MyDb></MyDb>
         </Route>
+        <Route exact path="/">
+          <MyDb></MyDb>
+        </Route>
       </Switch>
     </Router>
   );
