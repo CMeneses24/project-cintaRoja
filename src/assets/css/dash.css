@@ -1,9 +1,9 @@
-.lt-grid-container {
+/*.lt-grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 1px 1px;
-}
+}*/
 .dashb{
   height: 88.5vh;
 }
@@ -14,12 +14,12 @@
 .padre {
  align-items: center;
 }
-.lt-invertir {
+/*.lt-invertir {
   display: grid;  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 1px 1px;
   grid-area: 1 / 1 / 4 / 7;
-}
+}*/
 
 .lt-simulador {
   display: grid;
@@ -33,14 +33,13 @@
 
 .lt-cardsim { grid-area: 2 / 1 / 6 / 4; }
 
-.lt-opciones {
+/*.lt-opciones {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 1px 1px;
   grid-area: 1 / 2 / 5 / 6;
-}
-
+}*/
 .lt-titulop { grid-area: 1 / 1 / 2 / 7; }
 
 .lt-opcion1 { grid-area: 2 / 1 / 5 / 3; }

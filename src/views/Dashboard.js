@@ -11,7 +11,7 @@ const MyDb = () =>{
     },[]);
 
     const getFondos = () => {
-        axios.get('https://bool-cef2d.firebaseio.com/app/-MCPB3H_97GoY-zMkSUh/Usuarios/-MCPBLnwU0qzGSyyD_nq/cesario/fondos')
+        axios.get('https://bool-cef2d.firebaseio.com/app/-MCPB3H_97GoY-zMkSUh/Usuarios/-MCPBLnwU0qzGSyyD_nq/cesario/fondos.json')
         .then(({data,status})=>{
             if (status ===200){
                 getFondos(data);
