@@ -4,9 +4,9 @@ import MyFooter from './Footer';
 
 const Layout = ({children}) =>{
     return (
-        <div className="container-flex bg-primary">
+        <div className="bg-primary ">
         <Navbar_pers/>
-        <div className="container cont">{children}</div>
+        <div className="">{children}</div>
         <MyFooter/>
         </div>
     );

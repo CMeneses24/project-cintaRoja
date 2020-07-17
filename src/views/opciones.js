@@ -19,16 +19,28 @@ const MyOptions = ({op}) =>{
     };
 
     return(
-        <div class="lt-opciones ">
-        <h3>Tus opciones de Inversion</h3>
-        <div class="lt-opcion1 ">
-            {fondo?fondo.i1.tasa:"no disp"}
+        <div class="border border-dark col-9 mr-1 rounded text-center">
+        <h3 class="mb-2 ">Tus opciones de Inversion</h3>
+        <div class="row justify-content-center mb-1">
+        <div class=" card col-3  border-dark rounded border cardss">
+            <p>Empresa:{fondo?fondo.i1.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i1.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i1.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i1.tasa:"no disp"} </p></div>
+        <div class=" card ml-1 mr-1 col-3 border-dark rounded border cardss">
+            <p>Empresa:{fondo?fondo.i2.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i2.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i2.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i2.tasa:"no disp"} </p>
         </div>
-        <div class="lt-opcion2 ">eqrqerw</div>
-        <div class="lt-opcion3 ">eqrqerw</div>
-        <div class="lt-flechas">eqrqerw</div>
-        <button type="submit" class="btn btn-primary btn-sm">Invertir</button>
-        <div class="lt-flecha1">eqrqerw</div>
+        <div class=" card col-3 border-dark rounded border cardss ">
+             <p>Empresa:{fondo?fondo.i3.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i3.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i3.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i3.tasa:"no disp"} </p>
+        </div>
+        </div>
+        <button type="button" class="btn btn-success">Invertir</button>
         </div>
         );
 };

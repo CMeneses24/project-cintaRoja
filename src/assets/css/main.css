@@ -20,9 +20,10 @@
 .bg-primary{
   background: rgb(2,0,36);
 background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 23%, rgba(0,212,255,1) 54%);
-align-items:center;
 }
-
+.hh{
+  height: 100vh;
+}
 
 
 * {
@@ -163,7 +164,7 @@ iframe {
 
 .wrap-login100 {
   width: 390px;
-  background: ;
+  background:none ;
   border-radius: 10px;
   position: relative;
 }

@@ -3,7 +3,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 1px 1px;
-}*/
+}
 .dashb{
   height: 88.5vh;
 }
@@ -19,7 +19,7 @@
   grid-template-rows: repeat(4, 1fr);
   gap: 1px 1px;
   grid-area: 1 / 1 / 4 / 7;
-}*/
+}
 
 .lt-simulador {
   display: grid;
@@ -39,7 +39,7 @@
   grid-template-rows: repeat(5, 1fr);
   gap: 1px 1px;
   grid-area: 1 / 2 / 5 / 6;
-}*/
+}
 .lt-titulop { grid-area: 1 / 1 / 2 / 7; }
 
 .lt-opcion1 { grid-area: 2 / 1 / 5 / 3; }
@@ -245,4 +245,4 @@
     -ms-grid-column-span: 3;
   }
 
-}
+}*/

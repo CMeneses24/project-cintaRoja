@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './views/Home';
 import MyLogin from './views/Login';
 import MyDb from './views/Dashboard'
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import MyWelcome from './views/Welcome';
 
 
 
@@ -22,7 +22,7 @@ function App() {
           <MyDb></MyDb>
         </Route>
         <Route exact path="/">
-          <MyDb></MyDb>
+          <MyWelcome></MyWelcome>
         </Route>
       </Switch>
     </Router>
