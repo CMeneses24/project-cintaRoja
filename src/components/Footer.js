@@ -1,9 +1,15 @@
 import React from 'react';
 
 const MyFooter = () => {
-    return(<footer className="container-flex fot justify-content-center">
-        <p className='font-weight-bold text-white'>Diseñado por: Carla & Cesar </p>
-    </footer>);
+    return(
+        <footer className="sticky-footer bg-white">
+        <div className="container my-auto">
+          <div className="copyright text-center my-auto">
+            <span>Copyright &copy; Cesar & Carla 2020</span>
+          </div>
+        </div>
+      </footer>
+      );
 };
 
 export default MyFooter;

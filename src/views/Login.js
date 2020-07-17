@@ -3,7 +3,7 @@ import Layout from './../components/Layout';
 import axios from 'axios';
 import Login from './../components/Login';
 
-const MyLogin = () =>{
+const MyLogin = ({username, password}) =>{
     return(
             <Login> </Login> 
     );

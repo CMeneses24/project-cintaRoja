@@ -19,16 +19,30 @@ const MyOptions = ({op}) =>{
     };
 
     return(
-        <div class="lt-opciones ">
-        <h3>Tus opciones de Inversion</h3>
-        <div class="lt-opcion1 ">
-            {fondo?fondo.i1.tasa:"no disp"}
+        <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h3 class="m-0 font-weight-bold text-primary">Tus opciones de Inversion</h3>
         </div>
-        <div class="lt-opcion2 ">eqrqerw</div>
-        <div class="lt-opcion3 ">eqrqerw</div>
-        <div class="lt-flechas">eqrqerw</div>
-        <button type="submit" class="btn btn-primary btn-sm">Invertir</button>
-        <div class="lt-flecha1">eqrqerw</div>
+        <div class="card-body shadow row justify-content-center mb-1">
+        <div class=" card-body shadow col-3 shadow rounded border cardss">
+            <p class=  "text-l font-weight-bold text-primary text-uppercase mb-1" >Empresa:{fondo?fondo.i1.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i1.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i1.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i1.tasa:"no disp"} </p></div>
+        <div class=" card-body ml-1 mr-1 col-3 shadow rounded border cardss">
+            <p class=  "text-l font-weight-bold text-primary text-uppercase mb-1" >Empresa:{fondo?fondo.i2.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i2.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i2.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i2.tasa:"no disp"} </p>
+        </div>
+        <div class=" card-body col-3 shadow rounded border cardss ">
+             <p class=  "text-l font-weight-bold text-primary text-uppercase mb-1" >Empresa:{fondo?fondo.i3.empresa:"no disp"} </p>
+            <p>Monto Solicitado MXN:{fondo?fondo.i3.monto:"no disp"} </p>
+            <p>Días a Financiar:{fondo?fondo.i3.dias:"no disp"} </p>
+            <p>Tasa Anual:{fondo?fondo.i3.tasa:"no disp"} </p>
+        </div>
+        </div>
+        <button type="button" class="btn btn-success">Invertir</button>
         </div>
         );
 };

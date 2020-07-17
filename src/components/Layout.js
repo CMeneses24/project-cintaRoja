@@ -4,10 +4,19 @@ import MyFooter from './Footer';
 
 const Layout = ({children}) =>{
     return (
-        <div className="container-flex bg-primary">
-        <Navbar_pers/>
-        <div className="container cont">{children}</div>
+        <div class="container-flex">
+        <div class="row">
+            <div className='col-flex'>
+            <Navbar_pers/>
+            </div>
+            <div className="col">
+            {children}
+            </div>
+        </div>
+        
+        <div class="row">
         <MyFooter/>
+        </div>
         </div>
     );
 };

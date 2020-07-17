@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Layout from './../components/Layout';
 import axios from 'axios';
-import Db from './../components/Dashboard';
 
 const MyDb = () =>{
     const[ fondo, getFondo] = useState(null);
@@ -20,7 +19,7 @@ const MyDb = () =>{
     };
 
     return(
-        <Db></Db>  
+        <p>nada</p>
     );
 };
 

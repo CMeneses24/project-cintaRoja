@@ -4,32 +4,35 @@ import axios from 'axios';
 
 const MyInversion = () =>{
     return(
-        <div class="lt-grid-container dashb text-center">
-        <div class="lt-invertir ">
-          <div class="lt-simulador borde">
-            <h6>Inversion Rapida</h6>
-            <div class="lt-cardsim">
-              <div>
-                <form>
-        <div class="form-group">
-          <label for="Input"><h6>Ingresa la cantidad a invertir</h6></label>
-          <input type="Input" class="form-control sm" id="Input" aria-describedby="emailHelp"/>
+        <div class="card shadow mb-4">
+
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Inversion Rápida</h6>
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2"><h6>Ingresa los a invertir</h6></label>
-          <select multiple class="form-control" id="exampleFormControlSelect2">
-            <option>30</option>
-            <option>60</option>
-            <option>30</option>
-            <option>120</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-primary btn-sm">Invertir</button>
-      </form></div>
+        <div className="card-body">
+            <div class="input-group input-group-sm mt-1">
+             <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Monto MXN</span>
+             </div>
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"/>
             </div>
-          </div>
-        </div>
-        </div>
+            <select class="custom-select custom-select-sm mt-1">
+            <option selected>Selecciona días</option>
+            <option value="1">30</option>
+            <option value="2">60</option>
+            <option value="3">90</option>
+            <option value="4">120</option>
+            </select>
+            <select class="custom-select custom-select-sm mt-1">
+            <option selected>Tasa Interes</option>
+            <option value="1">17%</option>
+            <option value="2">18%</option>
+            <option value="3">19%</option>
+            <option value="4">20%</option>
+            </select>
+            <button type="button" class=" btn btn-success mt-1 mb-1">Invertir</button>
+            </div>
+            </div>
     );
 };
 
